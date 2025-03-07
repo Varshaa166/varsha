@@ -1,0 +1,143 @@
+<html >
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9cb4b5;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(188, 209, 186);
+        }
+
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #246f78;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+            color: hsl(0, 26%, 64%);
+        }
+
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #9cb4b5;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .form-container textarea {
+            resize: vertical;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #98ab6a;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-container input[type="submit"]:active {
+            background-color: hsl(198, 43%, 39%);
+        }
+
+        .form-container .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <div class="form-section">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+
+            <div class="form-section">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+
+            <div class="form-section">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required> Male
+                <input type="radio" id="female" name="gender" value="Female" required> Female
+                <input type="radio" id="other" name="gender" value="Other" required> Other
+            </div>
+
+            <div class="form-section">
+                <label for="mobileno">Mobile Number:</label>
+                <input type="tel" id="mobileno" name="mobileno" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-section">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-section">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-section">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <div class="form-section">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-section">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+
+            <div class="form-section">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                    <option value="course3">Course 3</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- login font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Registration fort -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <h1>Registration form:</h1>
+            <form action="login.html" method="post" id="loginForm">
+                Enter Name:
+                <input type="text" name="username" id="userName">
+                <br>
+                Enter Email:
+                <input class="email" type="email" name="email" placeholder="Enter your email" >
+                <br>
+                Enter Password:
+                <input type="password" class="password" name="password" >
+                <br>
+                Confirm Password:
+                <input type="password" class="conPass" name="confirm_password" placeholder="confirm your password" >
+                <br>
+                <input class="submit" type="submit" value="Submit" onsubmit="validateForm()">
+            </form>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
